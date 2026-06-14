@@ -114,8 +114,13 @@
   background: rgba(255,255,255,.72);
   box-shadow: 0 16px 42px rgba(62,52,148,.07);
   overflow: hidden;
-  cursor: default;
+  cursor: pointer;
   transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease, background .22s ease;
+}
+
+.capability-tab:not(.is-active):hover {
+  transform: translateY(-2px);
+  border-color: rgba(79,70,229,.35);
 }
 
 .capability-tab::before {
@@ -128,7 +133,6 @@
   transition: opacity .22s ease;
   }
 
-.capability-tab:hover,
 .capability-tab.is-active {
   transform: translateY(-4px);
   background: #fff;
@@ -136,7 +140,6 @@
   box-shadow: 0 24px 58px rgba(62,52,148,.13);
 }
 
-.capability-tab:hover::before,
 .capability-tab.is-active::before { opacity: 1; }
 
   .capability-tab-icon {
@@ -196,14 +199,7 @@
     linear-gradient(180deg, rgba(255,255,255,.92), rgba(250,249,255,.9));
 }
 
-.capability-panel.is-default { opacity: 1; transform: none; pointer-events: auto; }
-
-.capabilities-shell:has(.capability-tab:hover) .capability-panel { opacity: 0; transform: translateY(10px); pointer-events: none; }
-.capabilities-shell:has(.tab-calls:hover) .panel-calls,
-.capabilities-shell:has(.tab-scripts:hover) .panel-scripts,
-.capabilities-shell:has(.tab-analytics:hover) .panel-analytics,
-.capabilities-shell:has(.tab-tasks:hover) .panel-tasks,
-.capabilities-shell:has(.tab-ai:hover) .panel-ai {
+.capability-panel.is-active {
   opacity: 1;
   transform: none;
   pointer-events: auto;

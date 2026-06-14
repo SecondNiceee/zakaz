@@ -411,7 +411,7 @@
                                       </span>
                                       <h5>Краткий итог</h5>
                                     </div>
-                                    <p>Менеджер установил контакт, выявил ситуацию и презентовал решение. Клиент заинтересован, но нужно согласование с руководством. Следующий шаг назначен; рекомендуется проработать критерии принятия решения.</p>
+                                    <p>Менеджер установил контакт, выявил ситуацию и презентовал решение. Клиент заинтересован, но нужно согласование с руководством. Следующий ��аг назначен; рекомендуется проработать критерии принятия решения.</p>
                                   </article>
 
                                   <article class="ai-results__summary">
@@ -670,7 +670,7 @@
             Возможности сервиса
           </div>
           <h2 class="section-title">Все, что нужно для холодных звонков — в одном рабочем окне</h2>
-          <p class="section-subtitle">Наведи на пункт — ниже откроется подробный сценарий, что делает сервис и как это помогает руководителю и менеджерам.</p>
+          <p class="section-subtitle">Нажмите на пункт — ниже откроется подробный сценарий, что делает сервис и как это помогает руководителю и менеджерам.</p>
         </div>
 
         <div class="capabilities-shell">
@@ -707,7 +707,7 @@
           </div>
 
           <div class="capability-details">
-            <article class="capability-panel panel-calls is-default">
+            <article class="capability-panel panel-calls is-active">
               <div class="capability-copy">
                 <div class="capability-label">Телефония</div>
                 <h3>Звонки, записи и история клиента — сразу внутри CRM</h3>
@@ -829,6 +829,36 @@
     </main>
 
   <a href="#cta" class="sticky-cta btn btn--cta">Попробуйте 7 дней бесплатно</a>
+
+  <script>
+    (function () {
+      var shell = document.querySelector('.capabilities-shell');
+      if (!shell) return;
+      var tabs = Array.prototype.slice.call(shell.querySelectorAll('.capability-tab'));
+      var panels = Array.prototype.slice.call(shell.querySelectorAll('.capability-panel'));
+      var keys = ['calls', 'scripts', 'analytics', 'tasks', 'ai'];
+
+      function activate(key) {
+        tabs.forEach(function (tab) {
+          tab.classList.toggle('is-active', tab.classList.contains('tab-' + key));
+        });
+        panels.forEach(function (panel) {
+          panel.classList.toggle('is-active', panel.classList.contains('panel-' + key));
+        });
+      }
+
+      tabs.forEach(function (tab) {
+        var key = keys.find(function (k) { return tab.classList.contains('tab-' + k); });
+        if (!key) return;
+        tab.setAttribute('role', 'button');
+        tab.setAttribute('tabindex', '0');
+        tab.addEventListener('click', function () { activate(key); });
+        tab.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(key); }
+        });
+      });
+    })();
+  </script>
 
 </body>
 </html>
