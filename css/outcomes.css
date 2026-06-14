@@ -335,6 +335,21 @@
   overflow-y: auto;
 }
 
+.preview-shot {
+  flex: 1;
+  min-height: 0;
+  background: #f4f5fb;
+  overflow: hidden;
+}
+
+.preview-shot img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
 .call-card,
 .script-preview-card,
 .task-preview-card {
