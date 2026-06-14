@@ -4,13 +4,17 @@
 
 /* ─── Section wrapper ───────────────────────────────────────── */
 .integrations-section {
+  --primary: #5B67D8;
+  --muted: #6c7498;
   position: relative;
   margin: 64px 0 40px;
   padding: 64px 40px 40px;
-  border: 1px solid rgba(225, 227, 243, .96);
+  border: 1px solid transparent;
   border-radius: 36px;
-  background: #fafbff;
-  box-shadow: 0 24px 64px rgba(62, 52, 148, .07);
+  background:
+    var(--gradient-card) padding-box,
+    var(--gradient-brand) border-box;
+  box-shadow: var(--shadow-xl);
   overflow: hidden;
 }
 
@@ -20,8 +24,8 @@
   inset: 0;
   border-radius: inherit;
   background:
-    radial-gradient(circle at 14% 10%, rgba(79, 70, 229, .08), transparent 36%),
-    radial-gradient(circle at 88% 6%,  rgba(10, 168, 115, .07), transparent 30%);
+    radial-gradient(circle at 14% 10%, rgba(99, 102, 241, .08), transparent 36%),
+    radial-gradient(circle at 88% 6%,  rgba(20, 184, 166, .07), transparent 30%);
   pointer-events: none;
 }
 
@@ -65,7 +69,7 @@
 }
 
 .gradient-word {
-  background: linear-gradient(135deg, #4f46e5, #7b6dff);
+  background: var(--gradient-text);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -132,7 +136,7 @@
   left: 14px; right: 14px; top: 0;
   height: 3px;
   border-radius: 0 0 4px 4px;
-  background: linear-gradient(90deg, #4f46e5, #7b6dff);
+  background: var(--gradient-brand);
   opacity: 0;
   transition: opacity .18s;
 }
@@ -287,7 +291,7 @@
   align-items: center;
   gap: 8px;
   color: #fff;
-  background: linear-gradient(135deg, #4f46e5, #6f61ff);
+  background: var(--gradient-brand);
   text-decoration: none;
   font-size: 14px;
   font-weight: 880;
@@ -333,8 +337,9 @@
   border-radius: 14px;
   display: grid;
   place-items: center;
-  color: var(--primary, #4f46e5);
-  background: rgba(79, 70, 229, .07);
+  color: #fff;
+  background: var(--gradient-icon-2);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, .28);
   flex: 0 0 auto;
   overflow: hidden;
 }

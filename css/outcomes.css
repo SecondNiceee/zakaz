@@ -3,22 +3,21 @@
 .outcomes-section {
   --text: #07143b;
   --muted: #657094;
-  --primary: #4f46e5;
+  --primary: #5B67D8;
   --line: #e5e7f5;
-  --green: #0aa873;
-  --shadow: 0 22px 58px rgba(62, 52, 148, 0.12);
-  --shadow-soft: 0 12px 34px rgba(62, 52, 148, 0.08);
+  --green: #14B8A6;
+  --shadow: 0 22px 58px rgba(91, 103, 216, 0.10);
+  --shadow-soft: 0 12px 34px rgba(91, 103, 216, 0.07);
 
   position: relative;
   margin: 0;
   padding: 58px 44px 46px;
-  border: 1px solid rgba(229, 231, 245, .95);
+  border: 1px solid transparent;
   border-radius: 32px;
   background:
-    radial-gradient(circle at 14% 18%, rgba(79, 70, 229, .13), transparent 28%),
-    radial-gradient(circle at 92% 12%, rgba(10, 168, 115, .12), transparent 26%),
-    linear-gradient(180deg, rgba(255,255,255,.88), rgba(250,249,255,.84));
-  box-shadow: 0 24px 68px rgba(62, 52, 148, .10);
+    var(--gradient-card) padding-box,
+    var(--gradient-brand) border-box;
+  box-shadow: var(--shadow-xl);
   overflow: hidden;
   backdrop-filter: blur(16px);
   color: var(--text);
@@ -33,9 +32,9 @@
   width: 430px;
   height: 430px;
   border-radius: 999px;
-  background: rgba(79,70,229,.08);
+  background: rgba(99,102,241,.08);
   pointer-events: none;
-}
+  }
 
 .outcomes-section::after {
   content: "";
@@ -45,9 +44,9 @@
   width: 500px;
   height: 500px;
   border-radius: 999px;
-  background: rgba(10,168,115,.08);
+  background: rgba(20,184,166,.08);
   pointer-events: none;
-}
+  }
 
 .section-head {
   position: relative;
@@ -124,10 +123,10 @@
   position: absolute;
   inset: 0 0 auto;
   height: 4px;
-  background: linear-gradient(90deg, #4f46e5, #7b6dff, #0aa873);
+  background: var(--gradient-brand);
   opacity: 0;
   transition: opacity .22s ease;
-}
+  }
 
 .capability-tab:hover,
 .capability-tab.is-active {
@@ -140,17 +139,17 @@
 .capability-tab:hover::before,
 .capability-tab.is-active::before { opacity: 1; }
 
-.capability-tab-icon {
+  .capability-tab-icon {
   width: 46px;
   height: 46px;
   border-radius: 16px;
   display: grid;
   place-items: center;
-  color: var(--primary);
-  background: linear-gradient(180deg, #eeebff, #ffffff);
-  box-shadow: 0 12px 26px rgba(79,70,229,.10);
+  color: #fff;
+  background: var(--gradient-icon-2);
+  box-shadow: 0 10px 24px rgba(99,102,241,.30);
   margin-bottom: 16px;
-}
+  }
 
 .capability-tab-icon svg { width: 25px; height: 25px; }
 
