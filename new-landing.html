@@ -403,7 +403,7 @@
                                       </span>
                                       <h5>Краткий итог</h5>
                                     </div>
-                                    <p>Менеджер установил контакт, выявил ситуацию и презентовал решение. Клиент заинтересован, ����о нужно согласование с руководством. Следующий шаг назначен; рекомендуется проработать критерии принятия решения.</p>
+                                    <p>Менеджер установил контакт, выявил ситуацию и презентовал решение. Клиент заинтересо��ан, ����о нужно согласование с руководством. Следующий шаг назначен; рекомендуется проработать критерии принятия решения.</p>
                                   </article>
 
                                   <article class="ai-results__summary">
@@ -821,7 +821,7 @@
               <div class="capability-copy">
                 <div class="capability-label">Скрипты</div>
                 <h3>Менеджер видит, что сказать клиенту в нужный момент</h3>
-                <p>Скрипты, ответы на возражения и подсказки открываются рядом с карточкой. Это снижает хаос в разговоре и помогает нови��кам быстрее продавать.</p>
+                <p>Скрипты, ответы н�� возражения и подсказки открываются рядом с карточкой. Это снижает хаос в разговоре и помогает нови��кам быстрее продавать.</p>
                 <ul class="capability-list">
                   <li>готовые ответы на частые возражения;</li>
                   <li>единый стандарт разговора для всей команды;</li>
@@ -1091,7 +1091,7 @@
               </div>
               <div class="capability-preview capability-preview--shot">
                 <div class="preview-top"><span>Задачи и пропущенные</span><span class="preview-status">8 из 12</span></div>
-                <div class="crm-app crm-app--tasks" role="img" aria-label="Интерфейс сервиса Звонекс: задачи менеджера, список дел на сегодня и автозадача после пропущенного звонка">
+                <div class="crm-app crm-app--tasks" role="img" aria-label="Интерфейс сервиса Звонекс: задачи менеджера, список дел на сегодня и автозадача после пропу��енного звонка">
                   <header class="crm-app__bar">
                     <div class="crm-app__brand"><span class="crm-app__logo">3</span>Звонекс</div>
                     <nav class="crm-app__nav">
@@ -1327,6 +1327,7 @@
         tab.setAttribute('role', 'button');
         tab.setAttribute('tabindex', '0');
         tab.addEventListener('click', function () { activate(key); });
+        tab.addEventListener('mouseenter', function () { activate(key); });
         tab.addEventListener('keydown', function (e) {
           if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(key); }
         });
