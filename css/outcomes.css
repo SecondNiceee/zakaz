@@ -540,12 +540,13 @@
   border-radius: 999px;
   background: #f25c5c;
   color: #fff !important;
-  display: grid;
-  place-items: center;
-  font-size: 12px !important;
-  font-weight: 700;
-  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  line-height: 0;
 }
+.crm-app__livecall-x svg { display: block; }
 .crm-app__field {
   border: 1px solid #e8eaf5;
   border-radius: 9px;
