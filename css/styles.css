@@ -1568,10 +1568,10 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
 
 .slide-head {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  margin-bottom: 16px;
 }
 
 .slide-head__badge {
@@ -1591,9 +1591,10 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
 }
 
 .slide-head__title {
-  font-size: 0.75rem;
-  font-weight: 700;
+  font-size: 0.8125rem;
+  font-weight: 800;
   color: var(--color-text);
+  letter-spacing: -.01em;
 }
 
 .product-slide__split {
