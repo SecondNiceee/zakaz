@@ -718,50 +718,102 @@
               </div>
               <div class="capability-preview capability-preview--shot">
                 <div class="preview-top"><span>Карточка клиента</span><span class="preview-status">Звонок идет</span></div>
-                <div class="crm-mock" role="img" aria-label="Интерфейс сервиса: звонок из карточки клиента, история разговора и этапы сделки">
-                  <aside class="crm-mock__col crm-mock__client">
-                    <div class="crm-mock__client-name">Денис Смирнов</div>
-                    <div class="crm-mock__client-sub">Садко</div>
-                    <div class="crm-mock__contact">+7 911 623-53-67</div>
-                    <div class="crm-mock__contact">denis.4507@mail.ru</div>
-                    <button class="crm-mock__call" type="button" tabindex="-1">Позвонить</button>
-                    <div class="crm-mock__field"><span>Компания</span><b>Садко</b></div>
-                    <div class="crm-mock__field-row">
-                      <div class="crm-mock__field"><span>Фамилия</span><b>Смирнов</b></div>
-                      <div class="crm-mock__field"><span>Имя</span><b>Денис</b></div>
+                <div class="crm-app" role="img" aria-label="Интерфейс сервиса Звонекс: звонок из карточки клиента, история разговора и этапы сделки">
+                  <header class="crm-app__bar">
+                    <div class="crm-app__brand"><span class="crm-app__logo">Д</span>Звонекс</div>
+                    <nav class="crm-app__nav">
+                      <em>Проекты</em>
+                      <em class="is-active">Прозвон</em>
+                      <em>Контакты</em>
+                      <em>Вызовы</em>
+                      <em>Отчёты</em>
+                      <em>Настройки</em>
+                    </nav>
+                    <div class="crm-app__actions">
+                      <span class="crm-app__pill">KPI 0%</span>
+                      <span class="crm-app__pill crm-app__pill--green">Задачи 0</span>
+                      <span class="crm-app__avatar">Д</span>
                     </div>
-                    <div class="crm-mock__field"><span>ИНН</span><b>5321198055</b></div>
-                    <div class="crm-mock__tag">новинка</div>
-                  </aside>
+                  </header>
 
-                  <section class="crm-mock__col crm-mock__feed">
-                    <div class="crm-mock__tabs"><em class="is-active">История</em><em>Возражения и скрипты</em></div>
-                    <div class="crm-mock__event">
-                      <span class="crm-mock__ic crm-mock__ic--call"></span>
-                      <div><b>Звонок · Исходящий</b><p>Завершён · длительность 00:27</p></div>
-                      <time>17:28</time>
-                    </div>
-                    <div class="crm-mock__event">
-                      <span class="crm-mock__ic crm-mock__ic--cmt"></span>
-                      <div><b>Комментарий оператора</b><p>Передал в отдел продаж. Выставить счёт.</p></div>
-                      <time>18:24</time>
-                    </div>
-                    <div class="crm-mock__event">
-                      <span class="crm-mock__ic crm-mock__ic--ok"></span>
-                      <div><b>Этап изменён</b><p>Было: Заказ → Стало: Выявлена потребность</p></div>
-                      <time>18:24</time>
-                    </div>
-                    <div class="crm-mock__stage">Текущий этап: <b>Выявлена потребность</b></div>
-                  </section>
+                  <div class="crm-app__body">
+                    <aside class="crm-app__col crm-app__client">
+                      <div class="crm-app__client-name">Денис Смирнов</div>
+                      <div class="crm-app__client-sub">Садко</div>
+                      <div class="crm-app__contact">+7 911 623-53-67</div>
+                      <div class="crm-app__contact">denis.4507@mail.ru</div>
+                      <button class="crm-app__call" type="button" tabindex="-1">Позвонить</button>
+                      <div class="crm-app__field"><span>Компания</span><b>Садко</b></div>
+                      <div class="crm-app__field-row">
+                        <div class="crm-app__field"><span>Фамилия</span><b>Денис</b></div>
+                        <div class="crm-app__field"><span>Имя</span><b>Смирнов</b></div>
+                      </div>
+                      <div class="crm-app__field-row">
+                        <div class="crm-app__field"><span>Отчество</span><b></b></div>
+                        <div class="crm-app__field"><span>Должность</span><b></b></div>
+                      </div>
+                      <div class="crm-app__field-row">
+                        <div class="crm-app__field"><span>Регион</span><b></b></div>
+                        <div class="crm-app__field"><span>ИНН</span><b>5321198055</b></div>
+                      </div>
+                      <div class="crm-app__field-row">
+                        <div class="crm-app__field crm-app__field--accent"><span>Телефон</span><b>+7 911 623-53-67</b></div>
+                        <div class="crm-app__field"><span>Email</span><b>denis.4507@…</b></div>
+                      </div>
+                      <div class="crm-app__tag">новинка</div>
+                      <div class="crm-app__field"><span>Ответственный</span><b>Денис Смирнов</b></div>
+                    </aside>
 
-                  <aside class="crm-mock__col crm-mock__stages">
-                    <div class="crm-mock__stages-head">Этапы разговора</div>
-                    <div class="crm-mock__step"><i></i><b>Установление контакта</b></div>
-                    <div class="crm-mock__step"><i></i><b>Выявление потребности</b></div>
-                    <div class="crm-mock__step"><i></i><b>Презентация решения</b></div>
-                    <div class="crm-mock__step"><i></i><b>Работа с возражениями</b></div>
-                    <div class="crm-mock__step is-done"><i></i><b>Завершение звонка</b></div>
-                  </aside>
+                    <section class="crm-app__col crm-app__feed">
+                      <div class="crm-app__feed-top">
+                        <div class="crm-app__tabs"><em class="is-active">История</em><em>Возражения и скрипты</em></div>
+                        <div class="crm-app__chips"><span>К последнему</span><span class="is-active">К базе</span></div>
+                      </div>
+                      <div class="crm-app__events">
+                        <div class="crm-app__event crm-app__event--muted">
+                          <span class="crm-app__ic crm-app__ic--call"></span>
+                          <div><b>Звонок · Ошибка соединения</b><p>Канал недоступен · 79116235367</p></div>
+                          <time>17:20</time>
+                        </div>
+                        <div class="crm-app__event">
+                          <span class="crm-app__ic crm-app__ic--call"></span>
+                          <div><b>Звонок · Исходящий</b><p>Завершён · длительность 00:27</p></div>
+                          <time>17:28</time>
+                        </div>
+                        <div class="crm-app__event">
+                          <span class="crm-app__ic crm-app__ic--cmt"></span>
+                          <div><b>Комментарий от оператора</b><p>Сказал, что принимают решение.</p></div>
+                          <time>17:57</time>
+                        </div>
+                        <div class="crm-app__event">
+                          <span class="crm-app__ic crm-app__ic--cmt"></span>
+                          <div><b>Комментарий от оператора</b><p>Передал в отдел продаж. Выставить счёт и договор.</p></div>
+                          <time>18:24</time>
+                        </div>
+                        <div class="crm-app__event crm-app__event--ok">
+                          <span class="crm-app__ic crm-app__ic--ok"></span>
+                          <div><b>Этап изменён</b><p>Было: Заказ → Стало: Выявлена потребность</p></div>
+                          <time>18:24</time>
+                        </div>
+                      </div>
+                      <div class="crm-app__stage-select"><span>Текущий этап</span><b>Выявлена потребность</b></div>
+                      <div class="crm-app__textarea">Опишите результат звонка: что обсудили, договорённости, следующий шаг…</div>
+                      <div class="crm-app__feed-actions">
+                        <span class="crm-app__btn">Поставить задачу</span>
+                        <span class="crm-app__btn">Сохранить</span>
+                        <span class="crm-app__btn crm-app__btn--primary">Следующий</span>
+                      </div>
+                    </section>
+
+                    <aside class="crm-app__col crm-app__stages">
+                      <div class="crm-app__stages-head">Этапы разговора <i>+</i></div>
+                      <div class="crm-app__step"><span class="crm-app__step-ic"></span><div><b>Установление контакта</b><p>Представьтесь, назовите компанию</p></div></div>
+                      <div class="crm-app__step"><span class="crm-app__step-ic"></span><div><b>Выявление потребности</b><p>Задайте вопросы о бизнесе клиента</p></div></div>
+                      <div class="crm-app__step"><span class="crm-app__step-ic"></span><div><b>Презентация решения</b><p>Расскажите о вашем продукте</p></div></div>
+                      <div class="crm-app__step"><span class="crm-app__step-ic"></span><div><b>Работа с возражениями</b><p>Ответьте на вопросы клиента</p></div></div>
+                      <div class="crm-app__step is-done"><span class="crm-app__step-ic"></span><div><b>Завершение звонка</b><p>Договоритесь о следующем шаге</p></div></div>
+                    </aside>
+                  </div>
                 </div>
               </div>
             </article>
