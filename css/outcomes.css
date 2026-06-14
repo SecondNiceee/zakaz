@@ -1040,6 +1040,159 @@
 .crm-app__rcall-body span { color: var(--muted); font-weight: 500; font-size: 10px; }
 .crm-app__rcall time { color: var(--muted); font-weight: 600; font-size: 10px; white-space: nowrap; flex-shrink: 0; }
 
+/* ===== Tasks variant ===== */
+.crm-app__newtask {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 9px;
+  padding: 6px 13px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 800;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.crm-app--tasks .crm-app__body { grid-template-columns: 0.86fr 1.28fr 1.02fr; }
+
+/* Left task nav */
+.crm-app__tasknav { gap: 9px; }
+.crm-app__autocard {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid #e0d9ff;
+  border-radius: 12px;
+  padding: 9px 10px;
+  background: #f6f3ff;
+}
+.crm-app__autocard-ic {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: var(--primary);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.crm-app__autocard-ic svg { display: block; }
+.crm-app__autocard-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.crm-app__autocard-body b { font-weight: 800; font-size: 11px; color: #172044; }
+.crm-app__autocard-body span { color: var(--muted); font-weight: 500; font-size: 9px; }
+.crm-app__autocard-arrow { color: var(--muted); font-size: 12px; flex-shrink: 0; }
+.crm-app__autocard-ok {
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  background: var(--green);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.crm-app__autocard-ok svg { display: block; }
+.crm-app__filters { display: flex; flex-direction: column; gap: 2px; }
+.crm-app__filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border-radius: 9px;
+  padding: 8px 10px;
+}
+.crm-app__filter span { color: var(--muted); font-weight: 700; font-size: 12px; }
+.crm-app__filter b { color: var(--muted); font-weight: 800; font-size: 11px; }
+.crm-app__filter.is-active { background: #f0ecff; }
+.crm-app__filter.is-active span,
+.crm-app__filter.is-active b { color: var(--primary); }
+.crm-app__legend { display: flex; flex-direction: column; gap: 6px; margin-top: auto; padding-top: 6px; }
+.crm-app__legend-title { color: var(--muted); font-weight: 800; font-size: 9px; letter-spacing: .06em; text-transform: uppercase; }
+.crm-app__legend-row { display: flex; align-items: center; gap: 8px; color: #172044; font-weight: 600; font-size: 11px; }
+.crm-app__legend-row i { width: 9px; height: 9px; border-radius: 999px; flex-shrink: 0; }
+
+/* Middle task list */
+.crm-app__tasklist { gap: 9px; }
+.crm-app__donepill {
+  flex-shrink: 0;
+  border-radius: 999px;
+  padding: 5px 11px;
+  background: #ece8ff;
+  color: var(--primary);
+  font-weight: 800;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.crm-app__task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #eef0f8;
+  border-radius: 12px;
+  padding: 11px 12px;
+  background: #fbfbff;
+}
+.crm-app__task--active { background: #f6f3ff; border-color: #d9d3f5; }
+.crm-app__check {
+  width: 18px;
+  height: 18px;
+  border-radius: 6px;
+  border: 1.6px solid #cdd2e6;
+  background: #fff;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  flex-shrink: 0;
+}
+.crm-app__check.is-checked { background: var(--primary); border-color: var(--primary); }
+.crm-app__check svg { display: block; }
+.crm-app__task-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.crm-app__task-body b { font-weight: 800; font-size: 12px; color: #172044; }
+.crm-app__task-body span { color: var(--muted); font-weight: 500; font-size: 10px; }
+.crm-app__task time { color: var(--muted); font-weight: 600; font-size: 11px; white-space: nowrap; flex-shrink: 0; }
+
+/* Right task detail card */
+.crm-app__taskcard { gap: 9px; }
+.crm-app__autobadge {
+  align-self: flex-start;
+  border: 1px solid #d6efde;
+  border-radius: 999px;
+  padding: 5px 11px;
+  background: #f1faf4;
+  color: var(--green);
+  font-weight: 800;
+  font-size: 10px;
+}
+.crm-app__taskcard-title { font-weight: 800; font-size: 15px; color: #172044; }
+.crm-app__contact { display: flex; align-items: center; gap: 9px; padding-bottom: 2px; }
+.crm-app__contact-body { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.crm-app__contact-body b { font-weight: 800; font-size: 13px; color: #172044; }
+.crm-app__contact-body span { color: var(--muted); font-weight: 500; font-size: 10px; }
+.crm-app__note {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.45;
+}
+.crm-app__taskcard-actions { display: flex; flex-direction: column; gap: 7px; margin-top: auto; }
+.crm-app__btn--call {
+  justify-content: center;
+  background: linear-gradient(90deg, var(--primary), var(--green));
+  color: #fff;
+  border-color: transparent;
+  padding: 10px;
+  font-size: 12px;
+}
+.crm-app__btn--done {
+  justify-content: center;
+  background: #fff;
+  color: var(--primary);
+  border: 1px solid #e0d9ff;
+  padding: 10px;
+  font-size: 12px;
+}
+
 @media (min-width: 992px) {
   .crm-app__datepill { font-size: 10px; }
   .crm-app__export { font-size: 10px; }
@@ -1057,6 +1210,18 @@
   .crm-app__rcall-body b { font-size: 11px; }
   .crm-app__rcall-body span { font-size: 9px; }
   .crm-app__rcall time { font-size: 9px; }
+  .crm-app__newtask { font-size: 10px; }
+  .crm-app__filter span { font-size: 11px; }
+  .crm-app__filter b { font-size: 10px; }
+  .crm-app__legend-row { font-size: 10px; }
+  .crm-app__donepill { font-size: 10px; }
+  .crm-app__task-body b { font-size: 11px; }
+  .crm-app__task-body span { font-size: 9px; }
+  .crm-app__task time { font-size: 10px; }
+  .crm-app__taskcard-title { font-size: 14px; }
+  .crm-app__contact-body b { font-size: 12px; }
+  .crm-app__contact-body span { font-size: 9px; }
+  .crm-app__btn--call, .crm-app__btn--done { font-size: 11px; }
 }
 
 @media (max-width: 640px) {
@@ -1069,6 +1234,8 @@
   .crm-app--reports .crm-app__body { grid-template-columns: 1.1fr 1fr; }
   .crm-app--reports .crm-app__rcalls { display: none; }
   .crm-app__reporthead .crm-app__export { display: none; }
+  .crm-app--tasks .crm-app__body { grid-template-columns: 1fr 1.3fr; }
+  .crm-app--tasks .crm-app__taskcard { display: none; }
 }
 
 .call-card,

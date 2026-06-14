@@ -403,7 +403,7 @@
                                       </span>
                                       <h5>Краткий итог</h5>
                                     </div>
-                                    <p>Менеджер установил контакт, выявил ситуацию и презентовал решение. Клиент заинтересован, но нужно согласование с руководством. Следующий шаг назначен; рекомендуется проработать критерии принятия решения.</p>
+                                    <p>Менеджер установил контакт, выявил ситуацию и презентовал решение. Клиент заинтересован, ��о нужно согласование с руководством. Следующий шаг назначен; рекомендуется проработать критерии принятия решения.</p>
                                   </article>
 
                                   <article class="ai-results__summary">
@@ -1089,12 +1089,95 @@
                   <li>руководитель видит просрочки и невыполненные действия.</li>
                 </ul>
               </div>
-              <div class="capability-preview">
-                <div class="preview-top"><span>Задачи на перезвон</span><span class="preview-status">3 новые</span></div>
-                <div class="preview-body">
-                  <div class="task-preview-card"><div><strong>Перезвонить ООО «Монолит»</strong><span>Пропущенный входящий · 5 минут назад</span></div><span class="pill">Сегодня</span></div>
-                  <div class="task-preview-card"><div><strong>Вернуться к КП</strong><span>Клиент просил набрать после 16:00</span></div><span class="pill">16:00</span></div>
-                  <div class="task-preview-card"><div><strong>Контроль руководителя</strong><span>Просроченных задач нет</span></div><span class="pill">OK</span></div>
+              <div class="capability-preview capability-preview--shot">
+                <div class="preview-top"><span>Задачи и пропущенные</span><span class="preview-status">8 из 12</span></div>
+                <div class="crm-app crm-app--tasks" role="img" aria-label="Интерфейс сервиса Звонекс: задачи менеджера, список дел на сегодня и автозадача после пропущенного звонка">
+                  <header class="crm-app__bar">
+                    <div class="crm-app__brand"><span class="crm-app__logo">3</span>Звонекс</div>
+                    <nav class="crm-app__nav">
+                      <em>Проекты</em>
+                      <em class="is-active">Продажи</em>
+                      <em>Контакты</em>
+                      <em>Отчёты</em>
+                    </nav>
+                    <div class="crm-app__actions">
+                      <span class="crm-app__newtask">+ Новая задача</span>
+                    </div>
+                  </header>
+
+                  <div class="crm-app__body">
+                    <aside class="crm-app__col crm-app__tasknav">
+                      <div class="crm-app__scripthead-text"><b>Задачи</b></div>
+                      <div class="crm-app__autocard">
+                        <span class="crm-app__autocard-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.2 2.2z"/></svg></span>
+                        <div class="crm-app__autocard-body">
+                          <b>Пропущенный звонок</b>
+                          <span>09:42 · общий номер</span>
+                        </div>
+                        <span class="crm-app__autocard-arrow" aria-hidden="true">→</span>
+                        <span class="crm-app__autocard-ok" aria-hidden="true"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span>
+                      </div>
+                      <div class="crm-app__filters">
+                        <div class="crm-app__filter is-active"><span>Сегодня</span><b>12</b></div>
+                        <div class="crm-app__filter"><span>Просроченные</span><b>4</b></div>
+                        <div class="crm-app__filter"><span>Предстоящие</span><b>18</b></div>
+                        <div class="crm-app__filter"><span>Выполненные</span><b>36</b></div>
+                      </div>
+                      <div class="crm-app__legend">
+                        <span class="crm-app__legend-title">Тип задачи</span>
+                        <div class="crm-app__legend-row"><i style="background:var(--primary)"></i>Перезвонить</div>
+                        <div class="crm-app__legend-row"><i style="background:var(--green)"></i>Отправить КП</div>
+                        <div class="crm-app__legend-row"><i style="background:#43c1c9"></i>Провести встречу</div>
+                      </div>
+                    </aside>
+
+                    <section class="crm-app__col crm-app__tasklist">
+                      <div class="crm-app__scripthead">
+                        <div class="crm-app__scripthead-text">
+                          <span class="crm-app__scripthead-sub">Сегодня, 14 июня</span>
+                          <b>Мои задачи</b>
+                        </div>
+                        <span class="crm-app__donepill">8 из 12 выполнено</span>
+                      </div>
+                      <div class="crm-app__task crm-app__task--active">
+                        <span class="crm-app__check is-checked" aria-hidden="true"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span>
+                        <div class="crm-app__task-body"><b>Перезвонить Алексею Воронову</b><span>ООО «ТехноПроф» · пропущенный звонок</span></div>
+                        <time>10:30</time>
+                      </div>
+                      <div class="crm-app__task">
+                        <span class="crm-app__check" aria-hidden="true"></span>
+                        <div class="crm-app__task-body"><b>Отправить коммерческое предложение</b><span>Ирина Соколова · ООО «Вектор»</span></div>
+                        <time>12:00</time>
+                      </div>
+                      <div class="crm-app__task">
+                        <span class="crm-app__check" aria-hidden="true"></span>
+                        <div class="crm-app__task-body"><b>Повторный контакт после презентации</b><span>Михаил Орлов · Компания «Старт»</span></div>
+                        <time>14:15</time>
+                      </div>
+                      <div class="crm-app__task">
+                        <span class="crm-app__check" aria-hidden="true"></span>
+                        <div class="crm-app__task-body"><b>Уточнить решение по договору</b><span>Елена Романова · ООО «Глобус»</span></div>
+                        <time>16:40</time>
+                      </div>
+                    </section>
+
+                    <aside class="crm-app__col crm-app__taskcard">
+                      <span class="crm-app__autobadge">Автозадача после пропущенного</span>
+                      <b class="crm-app__taskcard-title">Перезвонить клиенту</b>
+                      <div class="crm-app__tcontact">
+                        <span class="crm-app__avatar">АВ</span>
+                        <div class="crm-app__contact-body"><b>Алексей Воронов</b><span>ООО «ТехноПроф»</span></div>
+                      </div>
+                      <div class="crm-app__field"><span>Ответственный</span><b>Анна Смирнова</b></div>
+                      <div class="crm-app__field"><span>Срок</span><b>Сегодня, 10:30</b></div>
+                      <div class="crm-app__field"><span>Создано</span><b>Автоматически в 09:42</b></div>
+                      <p class="crm-app__note">Клиент звонил на общий номер. Последний ответственный менеджер — Анна Смирнова.</p>
+                      <div class="crm-app__taskcard-actions">
+                        <span class="crm-app__btn crm-app__btn--call">Позвонить клиенту</span>
+                        <span class="crm-app__btn crm-app__btn--done">✓ Отметить выполненной</span>
+                      </div>
+                    </aside>
+                  </div>
                 </div>
               </div>
             </article>
