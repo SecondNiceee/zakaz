@@ -159,10 +159,10 @@
 .capability-tab h3 {
   margin: 0 0 9px;
   color: #111a42;
-  font-size: 19px;
-  line-height: 1.12;
-  letter-spacing: -.045em;
-  font-weight: 920;
+  font-size: 15px;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  font-weight: 700;
 }
 
 .capability-tab p {
