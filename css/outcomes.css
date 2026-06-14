@@ -1584,3 +1584,57 @@
   .bar-item { grid-template-columns: 70px 1fr 36px; font-size: 12px; }
   .score-card strong { font-size: 20px; }
 }
+
+/* ===== Обновлённый хедэр иллюстраций (как в макете приложения) ===== */
+.crm-app__bar { gap: 10px; }
+.crm-app__nav { gap: 2px; padding: 3px; }
+.crm-app__nav em {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 9px;
+}
+.crm-app__nav em svg {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+}
+.crm-app__kpi,
+.crm-app__tasks-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #e3e6f3;
+  border-radius: 999px;
+  padding: 5px 11px;
+  font-weight: 700;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.crm-app__kpi { color: var(--primary); background: #f5f4fd; }
+.crm-app__kpi svg { width: 13px; height: 13px; flex-shrink: 0; }
+.crm-app__tasks-pill {
+  color: var(--green);
+  background: #f0fbf6;
+  border-color: #cdeede;
+}
+.crm-app__tasks-pill svg { width: 13px; height: 13px; flex-shrink: 0; }
+.crm-app__tasks-pill i {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--green);
+  flex-shrink: 0;
+}
+.crm-app__avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--primary);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 12px;
+  flex-shrink: 0;
+}
