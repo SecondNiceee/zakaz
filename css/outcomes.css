@@ -11,7 +11,7 @@
 
   position: relative;
   margin: 0;
-  padding: 58px 44px 46px;
+  padding: 58px 0 46px;
   border: 1px solid transparent;
   border-radius: 32px;
   background:
@@ -475,20 +475,39 @@
 
 /* ===== Адаптив ===== */
 @media (max-width: 1180px) {
-  .capability-tabs { grid-template-columns: repeat(2, 1fr); }
-  .capability-details { min-height: 640px; }
+  .capability-tabs { grid-template-columns: repeat(3, 1fr); }
+  .capability-details { min-height: 560px; }
   .capability-panel { grid-template-columns: 1fr; }
-  .capability-preview { max-height: 280px; }
+  .capability-preview { max-height: 260px; }
 }
 
-@media (max-width: 720px) {
-  .outcomes-section { padding: 34px 20px 24px; border-radius: 24px; }
-  .section-title { font-size: 34px; }
-  .section-subtitle { font-size: 17px; }
-  .capability-tabs { grid-template-columns: 1fr; }
-  .capability-details { min-height: 760px; }
-  .capability-panel { padding: 20px; }
-  .capability-copy h3 { font-size: 28px; }
-  .ai-score { grid-template-columns: 1fr; }
-  .bar-item { grid-template-columns: 82px 1fr 38px; }
+@media (max-width: 860px) {
+  .capability-tabs { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .section-title { font-size: clamp(28px, 5vw, 38px); }
+  .section-subtitle { font-size: 16px; }
+  .capability-copy h3 { font-size: 26px; }
+}
+
+@media (max-width: 600px) {
+  .outcomes-section { padding: 32px 0 24px; border-radius: 20px; }
+  .section-title { font-size: clamp(24px, 6vw, 30px); letter-spacing: -.04em; }
+  .section-subtitle { font-size: 14px; line-height: 1.5; margin-top: 10px; }
+  .section-head { margin-bottom: 22px; }
+  .section-kicker { font-size: 12px; padding: 8px 12px; }
+  .capability-tabs { grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+  .capability-tab { padding: 10px 12px; gap: 8px; border-radius: 12px; }
+  .capability-tab-icon { width: 28px; height: 28px; border-radius: 8px; }
+  .capability-tab-icon svg { width: 14px; height: 14px; }
+  .capability-tab h3 { font-size: 11px; }
+  .capability-tab p { font-size: 10px; }
+  .capability-details { min-height: auto; border-radius: 18px; }
+  .capability-panel { position: relative; inset: auto; padding: 20px 16px; grid-template-columns: 1fr; gap: 16px; opacity: 1; transform: none; pointer-events: auto; display: none; }
+  .capability-panel.is-active { display: grid; }
+  .capability-copy h3 { font-size: clamp(20px, 5vw, 24px); letter-spacing: -.04em; }
+  .capability-copy p { font-size: 14px; }
+  .capability-list li { font-size: 13px; }
+  .capability-preview { max-height: 220px; border-radius: 14px; }
+  .ai-score { grid-template-columns: 1fr 1fr; }
+  .bar-item { grid-template-columns: 70px 1fr 36px; font-size: 12px; }
+  .score-card strong { font-size: 20px; }
 }
