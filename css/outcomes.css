@@ -199,7 +199,7 @@
   position: absolute;
   inset: 0;
   display: grid;
-  grid-template-columns: .6fr 1.5fr;
+  grid-template-columns: .82fr 1.45fr;
   gap: 26px;
   padding: 34px;
   opacity: 0;
@@ -226,6 +226,7 @@
 
 .capability-label {
   width: fit-content;
+  margin-left: -13px;
   padding: 8px 13px;
   border-radius: 999px;
   color: var(--primary);
