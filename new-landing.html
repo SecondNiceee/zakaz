@@ -828,11 +828,99 @@
                   <li>быстрый переход между сценариями без поиска в документах.</li>
                 </ul>
               </div>
-              <div class="capability-preview">
-                <div class="preview-top"><span>Скрипт во время звонка</span><span class="preview-status">Открыт</span></div>
-                <div class="preview-body">
-                  <div class="script-preview-card"><p class="script-title">Возражение: «Дорого»</p><p class="script-text">Понимаю. Давайте сравним не цену сервиса, а стоимость потерянных лидов и пропущенных перезвонов.</p></div>
-                  <div class="script-preview-card"><p class="script-title">Следующий шаг</p><p class="script-text">Зафиксировать интерес, назначить задачу и отправить КП прямо из карточки клиента.</p></div>
+              <div class="capability-preview capability-preview--shot">
+                <div class="preview-top"><span>Возражения и скрипты</span><span class="preview-status">Открыт</span></div>
+                <div class="crm-app crm-app--scripts" role="img" aria-label="Интерфейс сервиса Звонекс: карточка клиента, готовые ответы на возражения и форма добавления скрипта">
+                  <header class="crm-app__bar">
+                    <div class="crm-app__brand"><span class="crm-app__logo">3</span>Звонекс</div>
+                    <nav class="crm-app__nav">
+                      <em>Проекты</em>
+                      <em>Продажи</em>
+                      <em class="is-active">Контакты</em>
+                      <em>Отчёты</em>
+                    </nav>
+                    <div class="crm-app__actions">
+                      <span class="crm-app__status">Скрипт открыт</span>
+                    </div>
+                  </header>
+
+                  <div class="crm-app__body">
+                    <aside class="crm-app__col crm-app__client">
+                      <div class="crm-app__client-name">Елена Григорьева</div>
+                      <div class="crm-app__client-sub">ИП «Краснополье»</div>
+                      <button class="crm-app__call" type="button" tabindex="-1">Позвонить</button>
+                      <div class="crm-app__field"><span>Компания</span><b>ИП «Григорьева»</b></div>
+                      <div class="crm-app__field"><span>Регион</span><b>Краснодарский край</b></div>
+                      <div class="crm-app__field"><span>Телефон</span><b>+7 (391) 245-18-03</b></div>
+                      <div class="crm-app__field"><span>Email</span><b>e.grigoryeva@mail.ru</b></div>
+                      <div class="crm-app__field"><span>Ответственный</span><b>Денис Смирнов</b></div>
+                    </aside>
+
+                    <section class="crm-app__col crm-app__feed">
+                      <div class="crm-app__tabs">
+                        <em>История</em>
+                        <em class="is-active">Возражения и скрипты</em>
+                      </div>
+                      <div class="crm-app__scripthead">
+                        <div class="crm-app__scripthead-text">
+                          <span class="crm-app__scripthead-sub">Карточка клиента</span>
+                          <b>Возражения клиента</b>
+                        </div>
+                        <span class="crm-app__addbtn">+ Добавить</span>
+                      </div>
+                      <div class="crm-app__chips">
+                        <span class="crm-app__chip is-active">У вас дорого</span>
+                        <span class="crm-app__chip">Получил инфо</span>
+                        <span class="crm-app__chip">Нужно подумать</span>
+                        <span class="crm-app__chip">Работаем с другим</span>
+                      </div>
+                      <div class="crm-app__scripts">
+                        <div class="crm-app__script crm-app__script--active">
+                          <div class="crm-app__script-top">
+                            <b>У вас дорого</b>
+                            <span class="crm-app__script-copy">Скопировать</span>
+                          </div>
+                          <span class="crm-app__script-kind">Что ответить</span>
+                          <p>Понимаю. Подскажите, что для вас важнее — цена сейчас или итоговая выгода от результата?</p>
+                        </div>
+                        <div class="crm-app__script">
+                          <span class="crm-app__script-kind">Начальный вопрос</span>
+                          <p>С чем из конкурентов сравниваете? Что для вас важнее — цена или сроки?</p>
+                        </div>
+                        <div class="crm-app__script">
+                          <span class="crm-app__script-kind">Если клиент согласен</span>
+                          <p>Предложите демо и зафиксируйте следующий звонок — «Могу перенести в четверг в 11:00?»</p>
+                        </div>
+                      </div>
+                    </section>
+
+                    <aside class="crm-app__col crm-app__form">
+                      <div class="crm-app__form-head">
+                        <b>Добавить скрипт</b>
+                        <span class="crm-app__form-x" aria-hidden="true">×</span>
+                      </div>
+                      <div class="crm-app__form-field">
+                        <span>Возражение / тема</span>
+                        <div class="crm-app__input">У вас цены выше, чем у конкурентов</div>
+                      </div>
+                      <div class="crm-app__form-field">
+                        <span>Ответ (текст скрипта)</span>
+                        <div class="crm-app__input crm-app__input--area">Давайте сравним не только цену, а итоговую выгоду: сроки, сервис и результат для вашего бизнеса.</div>
+                      </div>
+                      <div class="crm-app__radio is-active">
+                        <span class="crm-app__radio-dot"></span>
+                        <div class="crm-app__radio-text"><b>Всем пользователям</b><span>Будет доступен внутри отдела</span></div>
+                      </div>
+                      <div class="crm-app__radio">
+                        <span class="crm-app__radio-dot"></span>
+                        <div class="crm-app__radio-text"><b>Конкретному пользователю</b><span>Выберите менеджера</span></div>
+                      </div>
+                      <div class="crm-app__form-actions">
+                        <span class="crm-app__btn crm-app__btn--ghost">Отмена</span>
+                        <span class="crm-app__btn crm-app__btn--primary">✓ Создать скрипт</span>
+                      </div>
+                    </aside>
+                  </div>
                 </div>
               </div>
             </article>
