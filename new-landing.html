@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Звонекс — лендинг (блок 1 + блок 2)</title>
+  <meta name="description" content="Лендинг: первый блок из index.html и второй блок (возможности сервиса) из «3 блока.html».">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Onest:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/outcomes.css">
+  <link rel="stylesheet" href="css/new-landing.css">
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true">
+    <div class="page-bg__gradient"></div>
+    <div class="page-bg__mesh"></div>
+    <div class="page-bg__aurora"></div>
+    <div class="page-bg__blobs">
+      <span class="page-bg__blob page-bg__blob--1"></span>
+      <span class="page-bg__blob page-bg__blob--2"></span>
+      <span class="page-bg__blob page-bg__blob--3"></span>
+    </div>
+    <div class="page-bg__glow page-bg__glow--1"></div>
+    <div class="page-bg__glow page-bg__glow--2"></div>
+    <div class="page-bg__glow page-bg__glow--3"></div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="/" class="logo">
+        <span class="logo__icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="9" fill="#A5B4FC"/>
+            <path d="M21.2 19.8c-1.5-.8-2.8-1.9-3.9-3.2-1.1-1.3-2-2.8-2.6-4.4-.2-.5.1-1 .6-1.2l1.4-.6c.4-.2.6-.6.5-1l-.4-1.8c-.1-.5-.5-.9-1-.9-1.2-.1-2.4.2-3.4.8-1.7 1-2.9 2.7-3.2 4.7-.4 2.4.3 4.9 1.9 6.9 1.6 2 3.9 3.4 6.4 3.9 2.2.4 4.5-.1 6.2-1.5.9-.8 1.4-2 1.2-3.2l-.3-1.8c-.1-.5-.5-.9-1-.9l-1.8.2c-.5.1-.8.5-.8 1 0 1.3-.5 2.5-1.3 3.5-.3.4-.8.5-1.2.3z" fill="#fff"/>
+          </svg>
+        </span>
+        <span class="logo__word">Звон<span class="logo__accent">екс</span></span>
+      </a>
+      <div class="header__menu">
+        <nav class="nav" aria-label="Навигация">
+          <a href="#features" class="nav__link">Возможности</a>
+          <a href="#pricing" class="nav__link">Тарифы</a>
+          <a href="#cases" class="nav__link">Кейсы</a>
+        </nav>
+        <div class="header__actions">
+          <a href="tel:+78001234567" class="header__phone">8 800 123-45-67</a>
+          <a href="#" class="btn btn--ghost">Войти</a>
+          <a href="#cta" class="btn btn--cta btn--sm">Попробуйте 7 дней бесплатно</a>
+        </div>
+      </div>
+      <button class="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__shell">
+        <div class="hero__main">
+          <div class="hero__copy">
+            <div class="hero__tags">
+              <span class="hero__badge">Автоматизация холодных продаж</span>
+            </div>
+
+            <h1 class="hero__title">
+              Увеличьте количество звонков отдела продаж&nbsp;в&nbsp;<span class="hero__highlight">3–5&nbsp;раз</span>
+            </h1>
+
+            <p class="hero__subtitle">
+              Загружайте базы клиентов, звоните из браузера, подключайте свою телефонию бесплатно и контролируйте работу отдела продаж через KPI, записи звонков и AI-анализ.
+            </p>
+
+            <div class="hero__features">
+              <article class="hero-feature">
+                <span class="hero-feature__icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2"/></svg>
+                </span>
+                <p>До <strong>400 звонков</strong> на одного менеджера — прямо из браузера</p>
+              </article>
+              <article class="hero-feature">
+                <span class="hero-feature__icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" stroke="currentColor" stroke-width="2"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </span>
+                <p><strong>Скрипт в карточке</strong> клиента во время разговора</p>
+              </article>
+              <article class="hero-feature">
+                <span class="hero-feature__icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </span>
+                <p><strong>KPI и AI-анализ</strong> в реальном времени</p>
+              </article>
+            </div>
+
+            <div class="hero__cta" id="cta">
+              <a href="#" class="btn btn--cta btn--lg">
+                Попробуйте 7 дней бесплатно
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </a>
+              <a href="#" class="btn btn--outline btn--lg btn--demo">
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M8 7l5 3-5 3V7z" fill="currentColor"/></svg>
+                Записаться на демонстрацию
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__product">
+            <div class="product-frame">
+              <div class="product-frame__glow" aria-hidden="true"></div>
+
+              <div class="kpi-board" data-kpi-board aria-label="Панель контроля Звонекс">
+                <div class="product-slider" data-product-slider aria-roledescription="carousel">
+
+                  <div class="product-slider__nav" role="tablist" aria-label="Экраны продукта">
+                    <button type="button" class="product-slider__seg is-active" role="tab" aria-selected="true" data-slide="0">KPI</button>
+                    <button type="button" class="product-slider__seg" role="tab" aria-selected="false" data-slide="1">AI-анализ</button>
+                    <button type="button" class="product-slider__seg" role="tab" aria-selected="false" data-slide="2">Отчёты</button>
+                  </div>
+                  <div class="product-slider__progress" aria-hidden="true"><span class="product-slider__progress-bar"></span></div>
+
+                  <div class="kpi-board__window">
+                    <div class="kpi-board__titlebar">
+                      <div class="kpi-board__dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                    </div>
+
+                    <div class="product-slider__viewport">
+                      <div class="product-slider__track">
+
+                        <!-- Slide 1: KPI + таблица + скрипты -->
+                        <div class="product-slide is-active" role="tabpanel" aria-label="KPI">
+                          <div class="product-slide__inner">
+                            <div class="slide-head">
+                              <span class="slide-head__badge">AI-анализ готов</span>
+                              <span class="slide-head__title">KPI отдела продаж</span>
+                            </div>
+
+                            <div class="kpi-cards kpi-cards--featured">
+                              <article class="kpi-card kpi-card--hero" aria-label="347 звонков из 400">
+                                <span class="kpi-card__label">Общее количество звонков</span>
+                                <span class="kpi-card__icon" aria-hidden="true">
+                                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2"/></svg>
+                                </span>
+                                <div class="kpi-card__body">
+                                  <div class="kpi-card__values">
+                                    <strong class="kpi-card__value" data-count="347" data-count-suffix="">0</strong>
+                                    <span class="kpi-card__quota">/ 400</span>
+                                    <span class="kpi-card__delta">+12% к вчера</span>
+                                  </div>
+                                  <div class="kpi-card__progress" aria-hidden="true"><span style="--w: 87%"></span></div>
+                                </div>
+                              </article>
+                              <article class="kpi-card kpi-card--stat" aria-label="Разговоры от 30 секунд 68 процентов">
+                                <span class="kpi-card__label">Разговоры от 30 секунд</span>
+                                <div class="kpi-card__body">
+                                  <div class="kpi-card__values">
+                                    <strong class="kpi-card__value" data-count="68" data-count-suffix="%">0</strong>
+                                    <span class="kpi-card__delta">+5% к вчера</span>
+                                  </div>
+                                </div>
+                              </article>
+                              <article class="kpi-card kpi-card--stat" aria-label="Успешные разговоры 84 процента">
+                                <span class="kpi-card__label">Успешные разговоры</span>
+                                <div class="kpi-card__body">
+                                  <div class="kpi-card__values">
+                                    <strong class="kpi-card__value kpi-card__value--green" data-count="84" data-count-suffix="%">0</strong>
+                                    <span class="kpi-card__delta">+3% к вчера</span>
+                                  </div>
+                                </div>
+                              </article>
+                              <article class="kpi-card kpi-card--stat" aria-label="18 КП">
+                                <span class="kpi-card__label">КП отправлено</span>
+                                <div class="kpi-card__body">
+                                  <div class="kpi-card__values">
+                                    <strong class="kpi-card__value" data-count="18">0</strong>
+                                    <span class="kpi-card__delta">+4 за день</span>
+                                  </div>
+                                </div>
+                              </article>
+                            </div>
+
+                            <div class="product-slide__split">
+                              <div class="calls-table-wrap">
+                                <div class="calls-table__head"><span class="dash-label">Статистика звонков</span><span class="dash-label-note"> · 03–09 июня</span></div>
+                                <div class="calls-table">
+                                  <div class="calls-table__row calls-table__row--labels">
+                                    <span>Менеджер</span><span>Звонки</span><span>AI</span><span>Этап</span><span>КП</span>
+                                  </div>
+                                  <div class="calls-table__row calls-table__row--top">
+                                    <div class="calls-table__person">
+                                      <span class="kpi-avatar kpi-avatar--1">АС</span>
+                                      <span>Аня Смирнова</span>
+                                      <span class="calls-table__badge">Топ</span>
+                                    </div>
+                                    <span class="calls-table__num">134</span>
+                                    <span class="calls-table__ai calls-table__ai--good">84%</span>
+                                    <span class="calls-table__stage">КП отправлено</span>
+                                    <span class="calls-table__num calls-table__num--accent">18</span>
+                                  </div>
+                                  <div class="calls-table__row">
+                                    <div class="calls-table__person">
+                                      <span class="kpi-avatar kpi-avatar--2">ДС</span>
+                                      <span>Денис Смирнов</span>
+                                    </div>
+                                    <span class="calls-table__num">47</span>
+                                    <span class="calls-table__ai calls-table__ai--mid">75%</span>
+                                    <span class="calls-table__stage">В работе</span>
+                                    <span class="calls-table__num calls-table__num--accent">6</span>
+                                  </div>
+                                  <div class="calls-table__row">
+                                    <div class="calls-table__person">
+                                      <span class="kpi-avatar kpi-avatar--3">ИИ</span>
+                                      <span>Иван Иванов</span>
+                                    </div>
+                                    <span class="calls-table__num">98</span>
+                                    <span class="calls-table__ai calls-table__ai--mid">68%</span>
+                                    <span class="calls-table__stage">Дозвон</span>
+                                    <span class="calls-table__num calls-table__num--accent">8</span>
+                                  </div>
+                                  <div class="calls-table__row">
+                                    <div class="calls-table__person">
+                                      <span class="kpi-avatar kpi-avatar--4">МК</span>
+                                      <span>Мария Козлова</span>
+                                    </div>
+                                    <span class="calls-table__num">42</span>
+                                    <span class="calls-table__ai calls-table__ai--mid">72%</span>
+                                    <span class="calls-table__stage">В работе</span>
+                                    <span class="calls-table__num calls-table__num--accent">4</span>
+                                  </div>
+                                  <div class="calls-table__row">
+                                    <div class="calls-table__person">
+                                      <span class="kpi-avatar kpi-avatar--2">СП</span>
+                                      <span>Сергей Петров</span>
+                                    </div>
+                                    <span class="calls-table__num">26</span>
+                                    <span class="calls-table__ai calls-table__ai--good">79%</span>
+                                    <span class="calls-table__stage">Дозвон</span>
+                                    <span class="calls-table__num calls-table__num--accent">2</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="kpi-scripts" data-kpi-scripts>
+                                <div class="kpi-scripts__head"><span class="dash-label">Скрипты и возражения</span></div>
+                                <div class="kpi-scripts__panel">
+                                  <span class="kpi-scripts__tag dash-label">Возражение</span>
+                                  <div class="kpi-scripts__objection kpi-scripts__objection--active" data-script-objection>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 9v4M12 17h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg>
+                                    <span data-script-objection-text>Мы уже работаем с другой компанией, менять ничего не планируем.</span>
+                                  </div>
+
+                                  <span class="kpi-scripts__tag dash-label">Ответ</span>
+                                  <p class="kpi-scripts__answer" data-script-answer>Понимаю. Подскажите, что вам больше всего нравится в текущем решении? Возможно, мы сможем предложить условия, которые будут для вас выгоднее.</p>
+
+                                  <ul class="kpi-scripts__examples">
+                                    <li>У вас цена выше, чем у конкурентов</li>
+                                    <li>Сейчас не самое подходящее время, перезвоните позже.</li>
+                                    <li>Нам нужно подумать и обсудить это с руководителем</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Slide 2: AI-анализ звонков -->
+                        <div class="product-slide" role="tabpanel" aria-label="AI-анализ звонков">
+                          <div class="product-slide__inner product-slide__inner--ai">
+                            <div class="ai-dash">
+                              <div class="ai-dash__head">
+                                <div class="ai-dash__head-main">
+                                  <span class="ai-dash__call">Звонок №12845 от 11.06.2026 11:42</span>
+                                  <span class="ai-dash__status">Анализ завершён</span>
+                                </div>
+                                <button type="button" class="ai-dash__export">
+                                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 19h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                  Экспорт
+                                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </button>
+                              </div>
+
+                              <div class="ai-dash__top">
+                                <article class="ai-dash__contact ai-dash-panel">
+                                  <img class="ai-dash__photo" src="images/specialist-avatar.png" alt="Иван Петров" width="46" height="46" loading="lazy">
+                                  <div class="ai-dash__contact-body">
+                                    <strong>Иван Петров</strong>
+                                    <span>Директор · ООО «СтройГарант»</span>
+                                    <ul class="ai-dash__contact-meta">
+                                      <li>
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                                        <span><strong>03:42</strong> Длительность</span>
+                                      </li>
+                                      <li class="ai-dash__meta-phone">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.8"/></svg>
+                                        <span>
+                                          <strong>+7&nbsp;(999)&nbsp;123-45-67</strong>
+                                          <em>Номер клиента</em>
+                                        </span>
+                                      </li>
+                                      <li>
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                                        <span><strong>Алексей Смирнов</strong> Менеджер</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </article>
+
+                                <article class="ai-dash__scores ai-dash-panel">
+                                  <h5 class="ai-dash-panel__title">Оценки по критериям</h5>
+                                  <div class="ai-dash__score">
+                                    <div class="ai-dash__score-row"><span>Приветствие</span><strong>90%</strong></div>
+                                    <div class="ai-dash__bar"><i style="--w: 90%; --c: #22C55E"></i></div>
+                                  </div>
+                                  <div class="ai-dash__score">
+                                    <div class="ai-dash__score-row"><span>Выявление потребности</span><strong>85%</strong></div>
+                                    <div class="ai-dash__bar"><i style="--w: 85%; --c: #22C55E"></i></div>
+                                  </div>
+                                  <div class="ai-dash__score">
+                                    <div class="ai-dash__score-row"><span>Презентация решения</span><strong>60%</strong></div>
+                                    <div class="ai-dash__bar"><i style="--w: 60%; --c: #F59E0B"></i></div>
+                                  </div>
+                                  <div class="ai-dash__score">
+                                    <div class="ai-dash__score-row"><span>Работа с возражениями</span><strong>40%</strong></div>
+                                    <div class="ai-dash__bar"><i style="--w: 40%; --c: #F59E0B"></i></div>
+                                  </div>
+                                  <div class="ai-dash__score">
+                                    <div class="ai-dash__score-row"><span>Закрытие на шаг</span><strong>90%</strong></div>
+                                    <div class="ai-dash__bar"><i style="--w: 90%; --c: #22C55E"></i></div>
+                                  </div>
+                                  <div class="ai-dash__score">
+                                    <div class="ai-dash__score-row"><span>Речевая культура</span><strong>80%</strong></div>
+                                    <div class="ai-dash__bar"><i style="--w: 80%; --c: #22C55E"></i></div>
+                                  </div>
+                                </article>
+
+                                <article class="ai-dash__focus ai-dash-panel">
+                                  <h5 class="ai-dash-panel__title">Фокус разговора</h5>
+                                  <div class="ai-dash__focus-body">
+                                    <div class="ai-dash__focus-main">
+                                      <strong>91%</strong>
+                                      <div>
+                                        <span>Вероятность продажи</span>
+                                        <em>Высокая</em>
+                                      </div>
+                                    </div>
+                                    <div class="ai-dash__focus-chart">
+                                      <svg class="ai-dash__spark" viewBox="0 0 140 40" aria-hidden="true">
+                                        <defs>
+                                          <linearGradient id="aiDashSpark" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stop-color="#818CF8" stop-opacity="0.5"/>
+                                            <stop offset="100%" stop-color="#818CF8" stop-opacity="0"/>
+                                          </linearGradient>
+                                        </defs>
+                                        <path d="M0 28 C18 28 24 12 40 16 S62 32 82 20 S104 10 140 14 V40 H0 Z" fill="url(#aiDashSpark)"/>
+                                        <path d="M0 28 C18 28 24 12 40 16 S62 32 82 20 S104 10 140 14" fill="none" stroke="#6366F1" stroke-width="2.5" stroke-linecap="round"/>
+                                      </svg>
+                                      <div class="ai-dash__focus-footer">
+                                        <span>Динамика по менеджеру</span>
+                                        <strong>+24% за неделю</strong>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </article>
+                              </div>
+
+                              <div class="ai-dash__insights">
+                                <article class="ai-dash-card ai-dash-panel ai-dash-card--good">
+                                  <h5 class="ai-dash-panel__title">Что получилось хорошо</h5>
+                                  <ul>
+                                    <li><span class="ai-dash-icon ai-dash-icon--ok" aria-hidden="true">✓</span>Уточнил потребности клиента</li>
+                                  </ul>
+                                </article>
+                                <article class="ai-dash-card ai-dash-panel ai-dash-card--rec">
+                                  <h5 class="ai-dash-panel__title">Рекомендации</h5>
+                                  <ol>
+                                    <li><span class="ai-dash-icon ai-dash-icon--num">1</span>Связаться и выслать презентацию</li>
+                                  </ol>
+                                </article>
+                                <article class="ai-dash-card ai-dash-panel ai-dash-card--warn">
+                                  <h5 class="ai-dash-panel__title">Что можно улучшить</h5>
+                                  <ul>
+                                    <li><span class="ai-dash-icon ai-dash-icon--warn" aria-hidden="true">!</span>Нет согласия на следующий шаг</li>
+                                  </ul>
+                                </article>
+                                <article class="ai-dash-card ai-dash-panel ai-dash-card--quotes">
+                                  <h5 class="ai-dash-panel__title">
+                                    Цитаты из звонка
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                                  </h5>
+                                  <div class="ai-dash-quote">
+                                    <div class="ai-dash-quote__head">
+                                      <span class="ai-dash-quote__time">00:45</span>
+                                      <b>Менеджер</b>
+                                    </div>
+                                    <p>«С какими сложностями сейчас сталкиваетесь?»</p>
+                                  </div>
+                                </article>
+                              </div>
+
+                              <section class="ai-dash__results ai-dash-panel" aria-label="Результаты звонка">
+                                <div class="ai-results__tabs" aria-hidden="true">
+                                  <span class="ai-results__tab">Анализ</span>
+                                  <span class="ai-results__tab is-active">Результаты</span>
+                                  <span class="ai-results__tab">Расшифровка</span>
+                                </div>
+
+                                <div class="ai-results__summaries">
+                                  <article class="ai-results__summary">
+                                    <div class="ai-results__summary-head">
+                                      <span class="ai-results__icon ai-results__icon--doc" aria-hidden="true">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" stroke="currentColor" stroke-width="1.8"/><path d="M14 2v6h6M8 13h8M8 17h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                                      </span>
+                                      <h5>Краткий итог</h5>
+                                    </div>
+                                    <p>Менеджер установил контакт, выявил ситуацию и презентовал решение. Клиент заинтересован, но нужно согласование с руководством. Следующий шаг назначен; рекомендуется проработать критерии принятия решения.</p>
+                                  </article>
+
+                                  <article class="ai-results__summary">
+                                    <div class="ai-results__summary-head">
+                                      <span class="ai-results__icon ai-results__icon--chat" aria-hidden="true">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                                      </span>
+                                      <h5>Итог разговора</h5>
+                                    </div>
+                                    <p>Диалог проведён успешно: выявлены потребности, проведена презентация, обработаны возражения. Следующий этап — повторный контакт после согласования условий.</p>
+                                  </article>
+                                </div>
+
+                                <div class="ai-results__flags">
+                                  <article class="ai-results__flag">
+                                    <span class="ai-results__icon ai-results__icon--shield" aria-hidden="true">
+                                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M12 3l8 3v6c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V6l8-3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <div>
+                                      <span>Наличие конфликта</span>
+                                      <strong class="ai-results__val ai-results__val--yes">Нет</strong>
+                                    </div>
+                                  </article>
+                                  <article class="ai-results__flag">
+                                    <span class="ai-results__icon ai-results__icon--target" aria-hidden="true">
+                                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/></svg>
+                                    </span>
+                                    <div>
+                                      <span>Успешный звонок</span>
+                                      <strong class="ai-results__val ai-results__val--partial">Частично</strong>
+                                    </div>
+                                  </article>
+                                  <article class="ai-results__flag">
+                                    <span class="ai-results__icon ai-results__icon--compass" aria-hidden="true">
+                                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M14.5 9.5L10 14l-1.5-3.5L14.5 9.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    <div>
+                                      <span>Целевой звонок</span>
+                                      <strong class="ai-results__val ai-results__val--yes">Да</strong>
+                                    </div>
+                                  </article>
+                                </div>
+                              </section>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Slide 3: Отчёты по звонкам -->
+                        <div class="product-slide" role="tabpanel" aria-label="Отчёты по звонкам">
+                          <div class="product-slide__inner product-slide__inner--report">
+                            <div class="slide-head">
+                              <span class="slide-head__badge">25–31 мая</span>
+                              <span class="slide-head__title">Отчёты по звонкам · Аня Смирнова</span>
+                            </div>
+
+                            <div class="report-metrics">
+                              <div class="report-metric report-metric--total">
+                                <span>Всего</span>
+                                <strong>134</strong>
+                                <em>+15%</em>
+                              </div>
+                              <div class="report-metric report-metric--outgoing">
+                                <span>Исходящие</span>
+                                <strong>112</strong>
+                                <em>+12%</em>
+                              </div>
+                              <div class="report-metric report-metric--positive">
+                                <span>Дозвон</span>
+                                <strong>98</strong>
+                                <em>+22%</em>
+                              </div>
+                              <div class="report-metric report-metric--negative">
+                                <span>Недозвон</span>
+                                <strong>36</strong>
+                                <em class="report-metric__delta--down">−8%</em>
+                              </div>
+                              <div class="report-metric report-metric--duration">
+                                <span>Ср. длит.</span>
+                                <strong>01:24</strong>
+                                <em>+18%</em>
+                              </div>
+                            </div>
+
+                            <div class="report-chart report-chart--wide">
+                              <div class="report-chart__title">Дозвон и недозвон</div>
+                              <svg class="report-chart__svg" viewBox="0 0 200 56" aria-hidden="true">
+                                <defs>
+                                  <linearGradient id="chartPositiveGrad" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#34D399" stop-opacity="0.35"/>
+                                    <stop offset="100%" stop-color="#34D399" stop-opacity="0"/>
+                                  </linearGradient>
+                                </defs>
+                                <path d="M0 20 L28 16 L56 18 L84 14 L112 12 L140 10 L168 12 L200 8 L200 56 L0 56 Z" fill="url(#chartPositiveGrad)"/>
+                                <polyline fill="none" stroke="#22C55E" stroke-width="2.2" stroke-linecap="round" points="0,20 28,16 56,18 84,14 112,12 140,10 168,12 200,8"/>
+                                <polyline fill="none" stroke="#F87171" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 2" points="0,46 28,44 56,45 84,43 112,44 140,41 168,43 200,39"/>
+                              </svg>
+                              <div class="report-chart__legend">
+                                <span><i class="dot dot--green"></i> Дозвон — 98</span>
+                                <span><i class="dot dot--red"></i> Недозвон — 36</span>
+                              </div>
+                            </div>
+
+                            <div class="report-bottom">
+                              <div class="report-calls report-calls--top">
+                                <div class="report-calls__head">
+                                  <div class="report-calls__title">Топ звонков по длительности</div>
+                                  <div class="report-calls__subtitle">Самые длинные разговоры в текущей выборке</div>
+                                </div>
+                                <div class="report-calls__table">
+                                  <div class="report-calls__row report-calls__row--head">
+                                    <span>#</span>
+                                    <span>Менеджер</span>
+                                    <span>Клиент</span>
+                                    <span>Этап</span>
+                                    <span>Тип</span>
+                                    <span>Длит.</span>
+                                    <span>Дата</span>
+                                    <span aria-hidden="true"></span>
+                                  </div>
+                                  <div class="report-calls__row">
+                                    <span class="report-calls__num">1</span>
+                                    <span class="report-calls__manager">Аня Смирнова</span>
+                                    <span class="report-calls__client">ООО «Альфа»</span>
+                                    <span class="report-calls__stage report-calls__stage--good">КП отправлено</span>
+                                    <span class="report-calls__type report-calls__type--out">Исходящий</span>
+                                    <strong>12:43</strong>
+                                    <span class="report-calls__date">31.05 14:20</span>
+                                    <span class="report-calls__actions">
+                                      <button type="button" class="report-calls__action" aria-label="Прослушать"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M10 8l6 4-6 4V8z" fill="currentColor"/></svg></button>
+                                      <button type="button" class="report-calls__action" aria-label="Открыть"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M14 3h7v7M10 14L21 3M21 10v11H3V3h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                                    </span>
+                                  </div>
+                                  <div class="report-calls__row">
+                                    <span class="report-calls__num">2</span>
+                                    <span class="report-calls__manager">Денис Смирнов</span>
+                                    <span class="report-calls__client">ООО «Стройком»</span>
+                                    <span class="report-calls__stage report-calls__stage--bad">Не дозвонился</span>
+                                    <span class="report-calls__type report-calls__type--out">Исходящий</span>
+                                    <strong>09:11</strong>
+                                    <span class="report-calls__date">31.05 12:40</span>
+                                    <span class="report-calls__actions">
+                                      <button type="button" class="report-calls__action" aria-label="Прослушать"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M10 8l6 4-6 4V8z" fill="currentColor"/></svg></button>
+                                      <button type="button" class="report-calls__action" aria-label="Открыть"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M14 3h7v7M10 14L21 3M21 10v11H3V3h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                                    </span>
+                                  </div>
+                                  <div class="report-calls__row">
+                                    <span class="report-calls__num">3</span>
+                                    <span class="report-calls__manager">Иван Иванов</span>
+                                    <span class="report-calls__client">ИП Иванов</span>
+                                    <span class="report-calls__stage report-calls__stage--good">Наш клиент</span>
+                                    <span class="report-calls__type report-calls__type--in">Входящий</span>
+                                    <strong>08:56</strong>
+                                    <span class="report-calls__date">30.05 15:11</span>
+                                    <span class="report-calls__actions">
+                                      <button type="button" class="report-calls__action" aria-label="Прослушать"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M10 8l6 4-6 4V8z" fill="currentColor"/></svg></button>
+                                      <button type="button" class="report-calls__action" aria-label="Открыть"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M14 3h7v7M10 14L21 3M21 10v11H3V3h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                                    </span>
+                                  </div>
+                                  <div class="report-calls__row">
+                                    <span class="report-calls__num">4</span>
+                                    <span class="report-calls__manager">Мария Козлова</span>
+                                    <span class="report-calls__client">ООО «Бета»</span>
+                                    <span class="report-calls__stage report-calls__stage--mid">Думает</span>
+                                    <span class="report-calls__type report-calls__type--out">Исходящий</span>
+                                    <strong>07:45</strong>
+                                    <span class="report-calls__date">29.05 10:31</span>
+                                    <span class="report-calls__actions">
+                                      <button type="button" class="report-calls__action" aria-label="Прослушать"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M10 8l6 4-6 4V8z" fill="currentColor"/></svg></button>
+                                      <button type="button" class="report-calls__action" aria-label="Открыть"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M14 3h7v7M10 14L21 3M21 10v11H3V3h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                                    </span>
+                                  </div>
+                                  <div class="report-calls__row">
+                                    <span class="report-calls__num">5</span>
+                                    <span class="report-calls__manager">Сергей Петров</span>
+                                    <span class="report-calls__client">ООО «Гранд»</span>
+                                    <span class="report-calls__stage report-calls__stage--good">КП отправлено</span>
+                                    <span class="report-calls__type report-calls__type--out">Исходящий</span>
+                                    <strong>06:32</strong>
+                                    <span class="report-calls__date">28.05 16:05</span>
+                                    <span class="report-calls__actions">
+                                      <button type="button" class="report-calls__action" aria-label="Прослушать"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M10 8l6 4-6 4V8z" fill="currentColor"/></svg></button>
+                                      <button type="button" class="report-calls__action" aria-label="Открыть"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M14 3h7v7M10 14L21 3M21 10v11H3V3h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                                    </span>
+                                  </div>
+                                </div>
+                                <button type="button" class="report-calls__more">Показать ещё 15 звонков</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="kpi-board__caption"><strong>KPI, AI-анализ и скрипты</strong> — в одном окне</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trust-row" id="features">
+          <article class="trust-card">
+            <span class="trust-card__icon trust-card__icon--setup" aria-hidden="true"></span>
+            <div>
+              <strong class="trust-card__val">15 минут</strong>
+              <span class="trust-card__lbl">от регистрации до первых звонков</span>
+            </div>
+          </article>
+          <article class="trust-card">
+            <span class="trust-card__icon trust-card__icon--growth" aria-hidden="true"></span>
+            <div>
+              <strong class="trust-card__val">×3–5</strong>
+              <span class="trust-card__lbl">рост звонков отдела продаж</span>
+            </div>
+          </article>
+          <article class="trust-card">
+            <span class="trust-card__icon trust-card__icon--calls" aria-hidden="true"></span>
+            <div>
+              <strong class="trust-card__val trust-card__val--phrase">Своя телефония</strong>
+              <span class="trust-card__lbl">без платы за минуты</span>
+            </div>
+          </article>
+          <article class="trust-card">
+            <span class="trust-card__icon trust-card__icon--setup" aria-hidden="true"></span>
+            <div>
+              <strong class="trust-card__val">15 мин</strong>
+              <span class="trust-card__lbl">настройка без IT-отдела</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="promise-row">
+          <div class="promise-item">
+            <span class="promise-item__check" aria-hidden="true">✓</span>
+            <p>Загрузите базу — покажем обзвон на ваших данных</p>
+          </div>
+          <div class="promise-item">
+            <span class="promise-item__check" aria-hidden="true">✓</span>
+            <p>Настроим телефонию и скрипты за вас</p>
+          </div>
+          <div class="promise-item">
+            <span class="promise-item__check" aria-hidden="true">✓</span>
+            <p>Менеджеры начнут звонить в день подключения</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <div class="container section-capabilities">
+      <section class="outcomes-section" id="capabilities">
+        <div class="section-head">
+          <div class="section-kicker">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 13.5 9 18.5 20 6.5" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Возможности сервиса
+          </div>
+          <h2 class="section-title">Все, что нужно для холодных звонков — в одном рабочем окне</h2>
+          <p class="section-subtitle">Наведи на пункт — ниже откроется подробный сценарий, что делает сервис и как это помогает руководителю и менеджерам.</p>
+        </div>
+
+        <div class="capabilities-shell">
+          <div class="capability-tabs">
+            <article class="capability-tab tab-calls is-active">
+              <div class="capability-tab-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M7.5 5.5 9.8 9c.4.6.3 1.4-.2 1.9l-1 1a11.5 11.5 0 0 0 3.8 3.8l1-1c.5-.5 1.3-.6 1.9-.2l3.5 2.3c.7.5.9 1.5.4 2.2-.7 1.1-1.9 1.7-3.2 1.4C9.6 19.2 4.8 14.4 3.6 8c-.3-1.3.3-2.5 1.4-3.2.7-.5 1.7-.3 2.2.4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h3>Звонки из браузера</h3>
+              <p>Менеджер звонит прямо из карточки клиента.</p>
+            </article>
+
+            <article class="capability-tab tab-scripts">
+              <div class="capability-tab-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6.8A3.8 3.8 0 0 1 7.8 3h8.4A3.8 3.8 0 0 1 20 6.8v4.4a3.8 3.8 0 0 1-3.8 3.8H10l-4.5 4v-4.3A3.8 3.8 0 0 1 4 11.2V6.8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8 9h8M8 12h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+              <h3>Скрипты и возражения</h3>
+              <p>Подсказки появляются во время разговора.</p>
+            </article>
+
+            <article class="capability-tab tab-analytics">
+              <div class="capability-tab-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M5 20V10m7 10V4m7 16v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M3 20h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+              <h3>Отчеты и KPI</h3>
+              <p>Видно активность, качество и результат.</p>
+            </article>
+
+            <article class="capability-tab tab-tasks">
+              <div class="capability-tab-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5 9.2 17 19 6" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 4h16v16H4z" stroke="currentColor" stroke-width="2"/></svg></div>
+              <h3>Задачи и пропущенные</h3>
+              <p>Ни один пропущенный не исчезает.</p>
+            </article>
+
+            <article class="capability-tab tab-ai">
+              <div class="capability-tab-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1m-8.6 8.6-2.1 2.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M9 12a3 3 0 1 0 6 0 3 3 0 0 0-6 0Z" stroke="currentColor" stroke-width="2"/></svg></div>
+              <h3>AI-анализ звонков</h3>
+              <p>Сервис оценивает разговоры и ошибки.</p>
+            </article>
+          </div>
+
+          <div class="capability-details">
+            <article class="capability-panel panel-calls is-default">
+              <div class="capability-copy">
+                <div class="capability-label">Телефония</div>
+                <h3>Звонки, записи и история клиента — сразу внутри CRM</h3>
+                <p>Менеджеру не нужно открывать софтфон, искать номер или вручную переносить результат разговора. Всё фиксируется автоматически.</p>
+                <ul class="capability-list">
+                  <li>исходящие и входящие звонки прямо в браузере;</li>
+                  <li>запись разговора сохраняется в карточке клиента;</li>
+                  <li>входящий попадает на последнего менеджера, который общался с клиентом.</li>
+                </ul>
+              </div>
+              <div class="capability-preview">
+                <div class="preview-top"><span>Карточка клиента</span><span class="preview-status">Звонок идет</span></div>
+                <div class="preview-body">
+                  <div class="call-card">
+                    <div class="call-row"><span>Клиент: ООО «Строй-Монтаж»</span><span class="pill">00:48</span></div>
+                    <div class="call-row"><span>Ответственный: Анна Петрова</span><span class="pill">Исходящий</span></div>
+                    <div class="call-row"><span>Запись разговора</span><span class="pill">Сохраняется</span></div>
+                  </div>
+                  <div class="call-card">
+                    <div class="call-row"><span>История</span><span>Звонок завершен · 01:45</span></div>
+                    <div class="call-row"><span>Следующее действие</span><span>Отправить КП</span></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="capability-panel panel-scripts">
+              <div class="capability-copy">
+                <div class="capability-label">Скрипты</div>
+                <h3>Менеджер видит, что сказать клиенту в нужный момент</h3>
+                <p>Скрипты, ответы на возражения и подсказки открываются рядом с карточкой. Это снижает хаос в разговоре и помогает новичкам быстрее продавать.</p>
+                <ul class="capability-list">
+                  <li>готовые ответы на частые возражения;</li>
+                  <li>единый стандарт разговора для всей команды;</li>
+                  <li>быстрый переход между сценариями без поиска в документах.</li>
+                </ul>
+              </div>
+              <div class="capability-preview">
+                <div class="preview-top"><span>Скрипт во время звонка</span><span class="preview-status">Открыт</span></div>
+                <div class="preview-body">
+                  <div class="script-preview-card"><p class="script-title">Возражение: «Дорого»</p><p class="script-text">Понимаю. Давайте сравним не цену сервиса, а стоимость потерянных лидов и пропущенных перезвонов.</p></div>
+                  <div class="script-preview-card"><p class="script-title">Следующий шаг</p><p class="script-text">Зафиксировать интерес, назначить задачу и отправить КП прямо из карточки клиента.</p></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="capability-panel panel-analytics">
+              <div class="capability-copy">
+                <div class="capability-label">Аналитика</div>
+                <h3>Руководитель видит не ощущения, а реальные цифры отдела</h3>
+                <p>Кто звонит, кто разговаривает дольше 20 секунд, кто отправляет КП и кто выполняет KPI — всё собирается в отчетах.</p>
+                <ul class="capability-list">
+                  <li>отчеты по каждому менеджеру и всему отделу;</li>
+                  <li>KPI по звонкам, разговорам, КП и результатам;</li>
+                  <li>выгрузка данных в Excel и CSV.</li>
+                </ul>
+              </div>
+              <div class="capability-preview">
+                <div class="preview-top"><span>Отчет по менеджерам</span><span class="preview-status">Сегодня</span></div>
+                <div class="preview-body">
+                  <div class="bars">
+                    <div class="bar-item"><span>Анна</span><div class="bar-track"><div class="bar-fill" style="width: 92%"></div></div><span>128</span></div>
+                    <div class="bar-item"><span>Иван</span><div class="bar-track"><div class="bar-fill" style="width: 74%"></div></div><span>98</span></div>
+                    <div class="bar-item"><span>Мария</span><div class="bar-track"><div class="bar-fill" style="width: 58%"></div></div><span>76</span></div>
+                    <div class="bar-item"><span>Алексей</span><div class="bar-track"><div class="bar-fill" style="width: 41%"></div></div><span>54</span></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="capability-panel panel-tasks">
+              <div class="capability-copy">
+                <div class="capability-label">Контроль</div>
+                <h3>Пропущенные звонки сразу превращаются в понятные задачи</h3>
+                <p>Если менеджер не ответил, система не просто кладет событие в историю. Она создает задачу на перезвон, чтобы лид не потерялся.</p>
+                <ul class="capability-list">
+                  <li>автоматическая задача по пропущенному звонку;</li>
+                  <li>срок, ответственный и клиент уже заполнены;</li>
+                  <li>руководитель видит просрочки и невыполненные действия.</li>
+                </ul>
+              </div>
+              <div class="capability-preview">
+                <div class="preview-top"><span>Задачи на перезвон</span><span class="preview-status">3 новые</span></div>
+                <div class="preview-body">
+                  <div class="task-preview-card"><div><strong>Перезвонить ООО «Монолит»</strong><span>Пропущенный входящий · 5 минут назад</span></div><span class="pill">Сегодня</span></div>
+                  <div class="task-preview-card"><div><strong>Вернуться к КП</strong><span>Клиент просил набрать после 16:00</span></div><span class="pill">16:00</span></div>
+                  <div class="task-preview-card"><div><strong>Контроль руководителя</strong><span>Просроченных задач нет</span></div><span class="pill">OK</span></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="capability-panel panel-ai">
+              <div class="capability-copy">
+                <div class="capability-label">AI-анализ</div>
+                <h3>AI помогает находить слабые места в разговорах</h3>
+                <p>Сервис может анализировать звонки, показывать качество диалога, соблюдение скрипта и причины, почему клиент не пошел дальше.</p>
+                <ul class="capability-list">
+                  <li>оценка разговора по заданным критериям;</li>
+                  <li>поиск ошибок менеджера и сильных моментов;</li>
+                  <li>выгрузка AI-отчета по звонкам согласно тарифу.</li>
+                </ul>
+              </div>
+              <div class="capability-preview">
+                <div class="preview-top"><span>AI-разбор звонка</span><span class="preview-status">Готов</span></div>
+                <div class="preview-body">
+                  <div class="ai-score">
+                    <div class="score-card"><span>Скрипт</span><strong>87%</strong></div>
+                    <div class="score-card"><span>Качество</span><strong>8.4</strong></div>
+                    <div class="score-card"><span>Интерес</span><strong>Высокий</strong></div>
+                  </div>
+                  <div class="script-preview-card" style="margin-top:12px"><p class="script-title">Рекомендация</p><p class="script-text">Менеджер хорошо выявил потребность, но не зафиксировал следующий шаг. Нужно назначить конкретное время повторного контакта.</p></div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      </div>
+    </main>
+
+  <a href="#cta" class="sticky-cta btn btn--cta">Попробуйте 7 дней бесплатно</a>
+</body>
+</html>

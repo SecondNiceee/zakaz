@@ -1,0 +1,13 @@
+/* ===== Склейка двух блоков на одной странице ===== */
+/* Выравнивает второй блок по той же сетке/контейнеру, что и первый */
+.section-capabilities {
+  margin: 56px 0 96px;
+}
+
+@media (max-width: 1180px) {
+  .section-capabilities { margin: 40px 0 72px; }
+}
+
+@media (max-width: 720px) {
+  .section-capabilities { margin: 32px 0 56px; }
+}
