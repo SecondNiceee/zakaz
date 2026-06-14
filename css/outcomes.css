@@ -153,8 +153,8 @@
   display: grid;
   place-items: center;
   color: var(--primary);
-  background: var(--gradient-icon-2);
-  box-shadow: 0 8px 20px rgba(99,102,241,.18);
+  background: var(--gradient-brand);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
   margin-bottom: 0;
 }
 
