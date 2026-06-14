@@ -163,7 +163,6 @@
 /* ─── Stage ─────────────────────────────────────────────────── */
 .integration-stage {
   position: relative;
-  min-height: 540px;
   border: 1.5px solid rgba(79, 70, 229, .14);
   border-radius: 0 0 26px 26px;
   background: #fff;
@@ -173,21 +172,19 @@
 
 /* ─── Panels ────────────────────────────────────────────────── */
 .integration-panel {
-  position: absolute;
-  inset: 0;
-  display: grid;
+  display: none;
   grid-template-columns: 1fr 1fr 1.3fr;
   gap: 0;
-  opacity: 0;
-  transform: translateY(10px);
-  pointer-events: none;
-  transition: opacity .2s ease, transform .2s ease;
 }
 
 .integration-panel.is-active {
-  opacity: 1;
-  transform: none;
-  pointer-events: auto;
+  display: grid;
+  animation: panelIn .22s ease both;
+}
+
+@keyframes panelIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
 }
 
 /* ─── Column dividers ───────────────────────────────────────── */
@@ -195,8 +192,9 @@
   padding: 36px 32px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   border-right: 1px solid #eef0f8;
+  overflow: hidden;
 }
 
 .integration-flow {
@@ -207,14 +205,16 @@
   gap: 10px;
   border-right: 1px solid #eef0f8;
   background: #fafbff;
+  overflow: hidden;
 }
 
 .integration-product {
-  padding: 28px 28px;
+  padding: 28px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   background: #f4f5fb;
+  overflow: hidden;
 }
 
 /* ─── Copy column ───────────────────────────────────────────── */
@@ -375,7 +375,6 @@
   width: 100%;
   display: grid;
   grid-template-columns: 86px 1fr;
-  min-height: 390px;
   border: 1px solid #dfe3f4;
   border-radius: 20px;
   background: #fff;
@@ -550,7 +549,6 @@
   width: 100%;
   grid-template-columns: 1fr .7fr;
   gap: 12px;
-  min-height: 390px;
 }
 
 .chat-window,
@@ -728,14 +726,8 @@
   .integration-tab.is-active { border-bottom-color: rgba(79, 70, 229, .22); }
   .integration-stage { border-radius: 20px; border: 1.5px solid rgba(79, 70, 229, .14); min-height: auto; }
   .integration-panel {
-    position: static;
-    opacity: 1 !important;
-    transform: none !important;
-    pointer-events: auto !important;
     grid-template-columns: 1fr;
-    display: none;
   }
-  .integration-panel.is-active { display: grid; }
   .integration-copy,
   .integration-flow,
   .integration-product { border-right: none; border-bottom: 1px solid #eef0f8; }
