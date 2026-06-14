@@ -12,15 +12,12 @@
   position: relative;
   margin: 0;
   padding: 58px 0 46px;
-  border: 1px solid rgba(229, 231, 245, .95);
-  border-radius: 32px;
-  background:
-    radial-gradient(circle at 14% 18%, rgba(79, 70, 229, .10), transparent 28%),
-    radial-gradient(circle at 92% 12%, rgba(20, 184, 166, .09), transparent 26%),
-    linear-gradient(180deg, rgba(255,255,255,.92), rgba(248,249,255,.88));
-  box-shadow: var(--shadow-xl);
-  overflow: hidden;
-  backdrop-filter: blur(16px);
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+  backdrop-filter: none;
   color: var(--text);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
