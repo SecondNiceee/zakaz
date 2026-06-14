@@ -241,7 +241,7 @@
                                   </div>
 
                                   <span class="kpi-scripts__tag dash-label">Ответ</span>
-                                  <p class="kpi-scripts__answer" data-script-answer>Понимаю. Подскажите, что вам больше всего нравится в текущем решении? Возможно, мы сможем предложить условия, которые будут для вас выгоднее.</p>
+                                  <p class="kpi-scripts__answer" data-script-answer>Понимаю. Подскажите, что вам больше всего нравится в те��ущем решении? Возможно, мы сможем предложить условия, которые будут для вас выгоднее.</p>
 
                                   <ul class="kpi-scripts__examples">
                                     <li>У вас цена выше, чем у конкурентов</li>
@@ -936,14 +936,143 @@
                   <li>выгрузка данных в Excel и CSV.</li>
                 </ul>
               </div>
-              <div class="capability-preview">
-                <div class="preview-top"><span>Отчет по менеджерам</span><span class="preview-status">Сегодня</span></div>
-                <div class="preview-body">
-                  <div class="bars">
-                    <div class="bar-item"><span>Анна</span><div class="bar-track"><div class="bar-fill" style="width: 92%"></div></div><span>128</span></div>
-                    <div class="bar-item"><span>Иван</span><div class="bar-track"><div class="bar-fill" style="width: 74%"></div></div><span>98</span></div>
-                    <div class="bar-item"><span>Мария</span><div class="bar-track"><div class="bar-fill" style="width: 58%"></div></div><span>76</span></div>
-                    <div class="bar-item"><span>Алексей</span><div class="bar-track"><div class="bar-fill" style="width: 41%"></div></div><span>54</span></div>
+              <div class="capability-preview capability-preview--shot">
+                <div class="preview-top"><span>Контроль KPI</span><span class="preview-status">Отчёты</span></div>
+                <div class="crm-app crm-app--reports" role="img" aria-label="Интерфейс сервиса Звонекс: контроль KPI отдела продаж, выполнение плана по менеджерам и список звонков">
+                  <header class="crm-app__bar">
+                    <div class="crm-app__brand"><span class="crm-app__logo">3</span>Звонекс</div>
+                    <nav class="crm-app__nav">
+                      <em>Проекты</em>
+                      <em>Продажи</em>
+                      <em>Контакты</em>
+                      <em class="is-active">Отчёты</em>
+                    </nav>
+                    <div class="crm-app__actions">
+                      <span class="crm-app__datepill">03–09 июня</span>
+                    </div>
+                  </header>
+
+                  <div class="crm-app__reporthead">
+                    <div class="crm-app__scripthead-text">
+                      <span class="crm-app__scripthead-sub">Настройки / KPI</span>
+                      <b>Контроль KPI отдела продаж</b>
+                    </div>
+                    <span class="crm-app__export">Экспорт отчёта</span>
+                  </div>
+
+                  <div class="crm-app__stats">
+                    <div class="crm-app__stat">
+                      <div class="crm-app__stat-top"><span class="crm-app__stat-label">Звонки</span><span class="crm-app__stat-meta">План 1 400</span></div>
+                      <b class="crm-app__stat-val">1 284</b>
+                    </div>
+                    <div class="crm-app__stat">
+                      <div class="crm-app__stat-top"><span class="crm-app__stat-label">Выполнение KPI</span><span class="crm-app__stat-meta crm-app__stat-meta--up">↑ 8%</span></div>
+                      <b class="crm-app__stat-val">86%</b>
+                    </div>
+                    <div class="crm-app__stat">
+                      <div class="crm-app__stat-top"><span class="crm-app__stat-label">Целевые действия</span><span class="crm-app__stat-meta">План 160</span></div>
+                      <b class="crm-app__stat-val">146</b>
+                    </div>
+                  </div>
+
+                  <div class="crm-app__body">
+                    <aside class="crm-app__col crm-app__kpiform">
+                      <div class="crm-app__kpiform-head">
+                        <div class="crm-app__scripthead-text">
+                          <span class="crm-app__scripthead-sub">Настройки → KPI</span>
+                          <b>Создать KPI</b>
+                        </div>
+                        <span class="crm-app__plus" aria-hidden="true">+</span>
+                      </div>
+                      <div class="crm-app__form-field">
+                        <span>Название KPI</span>
+                        <div class="crm-app__input">Звонки менеджеров</div>
+                      </div>
+                      <div class="crm-app__kpiform-row">
+                        <div class="crm-app__form-field">
+                          <span>Показатель</span>
+                          <div class="crm-app__select">Количество звонков</div>
+                        </div>
+                        <div class="crm-app__form-field">
+                          <span>Период</span>
+                          <div class="crm-app__select">Неделя</div>
+                        </div>
+                      </div>
+                      <div class="crm-app__form-field">
+                        <span>План на менеджера</span>
+                        <div class="crm-app__input crm-app__input--suffix">250<em>звонков</em></div>
+                      </div>
+                      <div class="crm-app__toggle is-active">
+                        <span class="crm-app__toggle-sw"></span>
+                        <div class="crm-app__toggle-text"><b>Учитывать только дозвоны</b><span>Исключить звонки без ответа</span></div>
+                      </div>
+                      <div class="crm-app__kpibar"></div>
+                    </aside>
+
+                    <section class="crm-app__col crm-app__managers">
+                      <div class="crm-app__scripthead">
+                        <div class="crm-app__scripthead-text">
+                          <span class="crm-app__scripthead-sub">Выполнение KPI</span>
+                          <b>По менеджерам</b>
+                        </div>
+                        <span class="crm-app__period">Неделя</span>
+                      </div>
+                      <div class="crm-app__mgr crm-app__mgr--active">
+                        <span class="crm-app__avatar">АС</span>
+                        <div class="crm-app__mgr-body">
+                          <div class="crm-app__mgr-top"><b>Анна Смирнова</b><span class="crm-app__mgr-pct">92%</span></div>
+                          <span class="crm-app__mgr-sub">286 звонков · план 250</span>
+                          <div class="crm-app__mgr-track"><div class="crm-app__mgr-fill" style="width:92%"></div></div>
+                        </div>
+                      </div>
+                      <div class="crm-app__mgr">
+                        <span class="crm-app__avatar">ДК</span>
+                        <div class="crm-app__mgr-body">
+                          <div class="crm-app__mgr-top"><b>Денис Ковалёв</b><span class="crm-app__mgr-pct">86%</span></div>
+                          <span class="crm-app__mgr-sub">254 звонка · план 250</span>
+                          <div class="crm-app__mgr-track"><div class="crm-app__mgr-fill" style="width:86%"></div></div>
+                        </div>
+                      </div>
+                      <div class="crm-app__mgr">
+                        <span class="crm-app__avatar">МИ</span>
+                        <div class="crm-app__mgr-body">
+                          <div class="crm-app__mgr-top"><b>Мария Иванова</b><span class="crm-app__mgr-pct">79%</span></div>
+                          <span class="crm-app__mgr-sub">239 звонков · план 250</span>
+                          <div class="crm-app__mgr-track"><div class="crm-app__mgr-fill" style="width:79%"></div></div>
+                        </div>
+                      </div>
+                      <div class="crm-app__mgr">
+                        <span class="crm-app__avatar">АП</span>
+                        <div class="crm-app__mgr-body">
+                          <div class="crm-app__mgr-top"><b>Алексей Петров</b><span class="crm-app__mgr-pct">74%</span></div>
+                          <span class="crm-app__mgr-sub">218 звонков · план 250</span>
+                          <div class="crm-app__mgr-track"><div class="crm-app__mgr-fill" style="width:74%"></div></div>
+                        </div>
+                      </div>
+                    </section>
+
+                    <aside class="crm-app__col crm-app__rcalls">
+                      <div class="crm-app__tabs">
+                        <em class="is-active">Звонки</em>
+                        <em>Этапы сделки</em>
+                      </div>
+                      <div class="crm-app__rcalls-head"><b>Анна Смирнова</b><span class="crm-app__mgr-pct">92% KPI</span></div>
+                      <div class="crm-app__rcall">
+                        <span class="crm-app__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="9" height="9" fill="currentColor"><path d="M7 5v14l12-7z"/></svg></span>
+                        <div class="crm-app__rcall-body"><b>ООО «Альфа»</b><span>Дозвон · 03:42</span></div>
+                        <time>Сегодня</time>
+                      </div>
+                      <div class="crm-app__rcall">
+                        <span class="crm-app__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="9" height="9" fill="currentColor"><path d="M7 5v14l12-7z"/></svg></span>
+                        <div class="crm-app__rcall-body"><b>ИП Крылов</b><span>Договорились · 05:18</span></div>
+                        <time>11:24</time>
+                      </div>
+                      <div class="crm-app__rcall">
+                        <span class="crm-app__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="9" height="9" fill="currentColor"><path d="M7 5v14l12-7z"/></svg></span>
+                        <div class="crm-app__rcall-body"><b>ООО «Вектор»</b><span>Перезвонить · 02:06</span></div>
+                        <time>10:48</time>
+                      </div>
+                    </aside>
                   </div>
                 </div>
               </div>
