@@ -363,6 +363,33 @@
   overflow: hidden;
 }
 
+@media (min-width: 992px) {
+  .crm-app { font-size: 10px; line-height: 1.3; }
+  .crm-app__brand { font-size: 12px; }
+  .crm-app__nav em { font-size: 11px; }
+  .crm-app__status { font-size: 11px; }
+  .crm-app__client-name { font-size: 13px; }
+  .crm-app__client-sub { font-size: 11px; }
+  .crm-app__call { font-size: 12px; }
+  .crm-app__livecall span { font-size: 9px; }
+  .crm-app__livecall b { font-size: 12px; }
+  .crm-app__livecall-end time { font-size: 11px; }
+  .crm-app__field span { font-size: 9px; }
+  .crm-app__field b { font-size: 11px; }
+  .crm-app__tabs em { font-size: 11px; }
+  .crm-app__event-kind { font-size: 9px; }
+  .crm-app__event b { font-size: 11px; }
+  .crm-app__event p { font-size: 10px; }
+  .crm-app__event time { font-size: 10px; }
+  .crm-app__stage-select span { font-size: 10px; }
+  .crm-app__stage-select b { font-size: 11px; }
+  .crm-app__textarea { font-size: 10px; }
+  .crm-app__btn { font-size: 10px; }
+  .crm-app__stages-head { font-size: 13px; }
+  .crm-app__step b { font-size: 11px; }
+  .crm-app__step-ic { font-size: 10px; }
+}
+
 /* Top app bar */
 .crm-app__bar {
   display: flex;
